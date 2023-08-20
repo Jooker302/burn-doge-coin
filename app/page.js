@@ -355,6 +355,7 @@ export default function Home() {
           ))}
         </div> */}
         {/* <div className="flex justify-center items-center h-screen"> */}
+        <h2 className="text-3xl font-semibold mb-8">Meet Our Partners</h2>
       <div className="flex flex-wrap justify-center">
         {visibleMembers.map((member, index) => (
           <TeamMember
