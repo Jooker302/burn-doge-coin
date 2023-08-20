@@ -1,22 +1,25 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
+import { faTelegram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [aboutSectionVisible, setAboutSectionVisible] = useState(false);
   const [featuresSectionVisible, setFeaturesSectionVisible] = useState(false);
+  const [joinUsSectionVisible, setJoinUsSectionVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const aboutSection = document.getElementById("about-section");
-      const featuresSection = document.getElementById("features-section");
-
+      const aboutSection = document.getElementById('about-section');
+      const featuresSection = document.getElementById('features-section');
+      const joinUsSection = document.getElementById('join-us-section');
+      
       if (aboutSection) {
         const rect = aboutSection.getBoundingClientRect();
-        const windowHeight =
-          window.innerHeight || document.documentElement.clientHeight;
-
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        
         if (rect.top <= windowHeight * 0.75) {
           setAboutSectionVisible(true);
         }
@@ -24,18 +27,26 @@ export default function Home() {
 
       if (featuresSection) {
         const rect = featuresSection.getBoundingClientRect();
-        const windowHeight =
-          window.innerHeight || document.documentElement.clientHeight;
-
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        
         if (rect.top <= windowHeight * 0.75) {
           setFeaturesSectionVisible(true);
         }
       }
+
+      if (joinUsSection) {
+        const rect = joinUsSection.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        
+        if (rect.top <= windowHeight * 0.75) {
+          setJoinUsSectionVisible(true);
+        }
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -211,6 +222,51 @@ export default function Home() {
           {/* Add more div boxes as needed */}
         </div>
       </section>
+
+
+      <section
+        id="join-us-section"
+        className={`bg-gray-100 py-12 text-center ${
+          joinUsSectionVisible ? 'slide-in-up' : ''
+        }`}
+      >
+        <h2 className="text-3xl font-semibold mb-4">Join Us</h2>
+        <div className="flex flex-col items-center mb-4">
+          <img
+            src="main.jpeg"
+            alt="Join Us"
+            className="h-32 w-32 md:h-64 md:w-64 rounded-full"
+          />
+          <div className="mt-2 text-sm max-w-md mx-auto px-4">
+            Ready to be a part of the Burn Doge revolution? Join us today and become a valued member of our community, where innovation, controlled scarcity, and boundless possibilities await. Let's shape the future of crypto together!
+          </div>
+        </div>
+        <div className="flex items-center justify-center space-x-4">
+          <a
+            className="m-2"
+            href="https://twitter.com/Bardoge313?t=5Z9gymFBFHN_UjcFMVdZGQ&s=09"
+          >
+            <FontAwesomeIcon
+              icon={faXTwitter}
+              size="lg"
+              className="w-8 h-8 text-white hover:text-[#DE7596]"
+            />
+          </a>
+          <a className="m-2" href="https://t.me/bardoge">
+            <FontAwesomeIcon
+              icon={faTelegram}
+              size="lg"
+              className="w-8 h-8 text-white hover:text-[#DE7596]"
+            />
+          </a>
+        </div>
+      </section>
+
+      <footer className="bg-gray-900 py-8 text-white text-center">
+        <p className="text-lg">
+          Listed on Binance Smart Chain
+        </p>
+      </footer>
     </>
   );
 }
