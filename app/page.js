@@ -202,7 +202,7 @@ export default function Home() {
 
       <section
         id="about-section"
-        className={`flex bg-slate-500 flex-col-reverse md:flex-row items-center justify-center p-8 ${
+        className={`flex bg-slate-300 flex-col-reverse md:flex-row items-center justify-center p-8 ${
           aboutSectionVisible ? "slide-in" : ""
         }`}
       >
