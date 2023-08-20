@@ -29,7 +29,7 @@ export default function Home() {
       <img
         src={image}
         alt={name}
-        className="h-32 w-32 md:h-40 md:w-40 rounded-full object-cover border-2 border-blue-500"
+        className="h-32 w-32 md:h-40 md:w-40 rounded-full object-cover border-2 border-[#FFF730]"
       />
 
       <p className="mt-2 font-semibold text-lg">{name}</p>
@@ -142,26 +142,26 @@ export default function Home() {
   return (
     <>
     
-      <div className="relative bg-blue-500">
+      <div className="relative bg-[#FFF730]">
         <div className="flex justify-between items-center p-4">
           <div className="flex items-center space-x-4">
             <img src="main.jpeg" alt="Logo" className="h-8 w-8 rounded-full" />
           </div>
           <nav className="hidden md:flex flex-grow justify-center space-x-4">
-            <a href="#" className="text-white">
+            <a href="#" className="text-black">
               Home
             </a>
-            <a href="#about-section" className="text-white">
+            <a href="#about-section" className="text-black">
               About
             </a>
-            <a href="#team-section" className="text-white">
+            <a href="#team-section" className="text-black">
               Team
             </a>
           </nav>
 
           <div className="md:hidden">
             <button
-              className="text-white"
+              className="text-black"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <svg
@@ -184,19 +184,19 @@ export default function Home() {
         <nav
           className={`${
             mobileMenuOpen ? "block" : "hidden"
-          } absolute top-full left-0 right-0 bg-blue-500 md:hidden transition-all duration-300`}
+          } absolute top-full left-0 right-0 bg-[#FFF730] md:hidden transition-all duration-300`}
         >
           <div className="p-4 space-y-2">
-            <a href="#" className="block text-white">
+            <a href="#" className="block text-black">
               Home
             </a>
-            <a href="#about-section" className="block text-white">
+            <a href="#about-section" className="block text-black">
               About
             </a>
-            <a href="#team-section" className="block text-white">
+            <a href="#team-section" className="block text-black">
               Team
             </a>
-            <a href="https://t.me/burndoge" className="block text-white">
+            <a href="https://t.me/burndoge" className="block text-black">
               Telegram
             </a>
           </div>
@@ -210,7 +210,7 @@ export default function Home() {
           className=" h-32 w-32 md:h-64 md:w-64 rounded-full"
         />
         <h2 className="mt-4 text-xl font-semibold md:text-2xl">Introducing</h2>
-        <div className="mt-2 w-20 h-1 bg-blue-500"></div>
+        <div className="mt-2 w-20 h-1 bg-[#FFF730]"></div>
         <p className="mt-4 text-xl font-semibold text-center ">
           Burn Doge: Revolutionizing Crypto with Controlled Scarcity.
         </p>
@@ -349,7 +349,7 @@ export default function Home() {
             <FontAwesomeIcon
               icon={faTelegram}
               size="lg"
-              className="w-8 h-8 text-black hover:text-blue-500"
+              className="w-8 h-8 text-black hover:text-[#FFF730]"
             />
           </a>
         </div>
@@ -384,7 +384,7 @@ export default function Home() {
     {/* </div> */}
       </section>
 
-      <footer className="bg-blue-500 py-8 text-white text-center">
+      <footer className="bg-[#FFF730] py-8 text-black text-center">
         <p className="text-lg">
           Listed on Binance Smart Chain
         </p>
