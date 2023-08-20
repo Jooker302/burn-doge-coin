@@ -3,11 +3,17 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { faTelegram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Loader from "@/components/loading";
 
 
 
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  
+
+  
 
   const TeamMember = ({ name, role, image, isVisible}) => {
     return (
@@ -122,10 +128,20 @@ export default function Home() {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
-  
+  useEffect(() => {
+    // Simulate a delay to demonstrate the loading process
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <>
+    
       <div className="relative bg-blue-500">
         <div className="flex justify-between items-center p-4">
           <div className="flex items-center space-x-4">
