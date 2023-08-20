@@ -236,7 +236,7 @@ export default function Home() {
             revolutionary.
           </p>
           <p className="mb-2">
-            <p className={`font-bold text-xl md:text-2xl`}>About Us</p>
+            <p className={`font-bold text-xl md:text-2xl fire text-red-500`}>About Us</p>
             At Burn Doge, we're not just another cryptocurrency we're a
             revolution in the world of digital assets. Inspired by the
             remarkable success of Dogecoin and driven by a passion for
@@ -244,7 +244,7 @@ export default function Home() {
             landscape. Our mission? To embrace the power of controlled scarcity
             and redefine the value proposition for crypto holders.
           </p>
-          <p className="font-bold text-xl md:text-2xl">Controlled Scarcity for Real Value</p>
+          <p className="font-bold text-xl md:text-2xl fire text-red-500">Controlled Scarcity for Real Value</p>
           <p className="mb-2">
             In a market saturated with countless tokens, Burn Doge stands out by
             implementing a deflationary model that truly rewards its community
@@ -257,7 +257,7 @@ export default function Home() {
             we're shaping a new era of crypto where value isn't just theoretical
             it's tangible.
           </p>
-          <p className="font-bold text-xl md:text-2xl">Community and Innovation Unite</p>
+          <p className="font-bold text-xl md:text-2xl fire text-red-500">Community and Innovation Unite</p>
           <p className="md:mb-0 mb-6">
             Beyond the innovative tokenomics, Burn Doge takes pride in fostering
             a thriving community that embodies the spirit of camaraderie and
@@ -279,22 +279,22 @@ export default function Home() {
           featuresSectionVisible ? "slide-in-up" : ""
         }`}
       >
-        <h2 className="text-3xl text-center font-semibold mb-8">Features</h2>
+        <h2 className="text-3xl text-center font-semibold mb-8 fire text-red-500">Features</h2>
         <div className="flex flex-wrap justify-center">
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Token Name</h3>
+            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Token Name</h3>
             <p>Burn Doge (BDT)</p>
           </div>
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Token Type</h3>
+            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Token Type</h3>
             <p>Utility Token</p>
           </div>
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Total Supply</h3>
+            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Total Supply</h3>
             <p>Initially set at 1,000,000 BDT</p>
           </div>
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Token Distribution</h3>
+            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Token Distribution</h3>
             <p> <span className="font-semibold">Initial Sale : </span></p><p> *30% of total supply allocated for the initial sale to fund development, marketing, and operational expenses.
             </p><p><span className="font-semibold">Liquidity Pool : </span> </p><p>* 70% of total supply used to establish a liquidity pool to ensure stability and facilitate trading on exchanges.
   
@@ -302,7 +302,7 @@ export default function Home() {
             </p><p><span className="font-semibold">Team and Advisors : </span></p><p>* 10% of total supply allocated for the project's core team and advisors, with a vesting period to ensure long-term commitment.</p>
           </div>
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Token Utility</h3>
+            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Token Utility</h3>
             <p>
               <span className="font-semibold">Deflationary Mechanism : </span></p><p> * A percentage (e.g., 1%) of each transaction is burned, reducing the total supply over time, thus increasing scarcity and potential value.
   
@@ -310,7 +310,7 @@ export default function Home() {
               </p><p><span className="font-semibold">Access to Features : </span></p><p>* BDT can be used to access premium features within the associated platform or ecosystem.</p>
           </div>
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Liquidity and Exchanges</h3>
+            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Liquidity and Exchanges</h3>
             <p>
             <span className="font-semibold">Listed on : </span> </p><p>BDT will be listed on several reputable exchanges to ensure liquidity and wider accessibility.
               </p><p><span className="font-semibold">Details : </span> </p><p>A portion of the liquidity pool will be used to provide initial trading pairs on exchanges, enhancing market liquidity.</p>
@@ -326,7 +326,7 @@ export default function Home() {
           joinUsSectionVisible ? 'slide-in-up' : ''
         }`}
       >
-        <h2 className="text-3xl font-semibold mb-4">Join Us</h2>
+        <h2 className="text-3xl font-semibold mb-4 fire text-red-500">Join Us</h2>
         <div className="flex flex-col items-center mb-4">
           <img
             src="main.jpeg"
@@ -374,7 +374,7 @@ export default function Home() {
           ))}
         </div> */}
         {/* <div className="flex justify-center items-center h-screen"> */}
-        <h2 className="text-3xl font-semibold mb-8">Meet Our Partners</h2>
+        <h2 className="text-3xl font-semibold mb-8 fire text-red-500">Meet Our Partners</h2>
       <div className="flex flex-wrap justify-center">
         {visibleMembers.map((member, index) => (
           <TeamMember
