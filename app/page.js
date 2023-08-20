@@ -349,7 +349,7 @@ export default function Home() {
             <FontAwesomeIcon
               icon={faTelegram}
               size="lg"
-              className="w-8 h-8 text-black hover:text-[#DE7596]"
+              className="w-8 h-8 text-black hover:text-blue-500"
             />
           </a>
         </div>
