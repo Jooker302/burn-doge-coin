@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href='main.jpeg'></link>
+        <link rel="icon" href='/main.jpeg'></link>
       </head>
       <body>{children}</body>
     </html>
