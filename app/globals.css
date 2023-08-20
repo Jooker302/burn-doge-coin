@@ -48,3 +48,47 @@
   animation: slideInUp 1s ease-in-out;
 }
 
+/* styles/globals.css */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+/* styles/globals.css */
+@keyframes slideInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  20%, 80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  25%, 75% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
+
+.slide-in-out {
+  animation: slideInOut 12s infinite;
+}
+
+.slide-inn {
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.slide-outt {
+  animation: slideOut 0.5s ease-in-out forwards;
+}
+
