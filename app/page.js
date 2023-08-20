@@ -62,7 +62,20 @@ export default function Home() {
           </a>
         </div>
       </nav>
+
+
+      
     </div>
+
+    <section className="flex flex-col items-center justify-center py-12 bg-gray-100">
+        <img src="main.jpeg" alt="Logo" className=" h-32 w-32 md:h-64 md:w-64 rounded-full" />
+        <h2 className="mt-4 text-xl font-semibold md:text-2xl">Introducing</h2>
+        <div className="mt-2 w-20 h-1 bg-blue-500"></div>
+        <p className="mt-4 text-xl font-semibold text-center ">Burn Doge: Revolutionizing Crypto with Controlled Scarcity.</p>
+      </section>
+
+
+    
     </>
   );
 }
